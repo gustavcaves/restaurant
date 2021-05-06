@@ -1,6 +1,6 @@
-# Web Api Pelis
+# Web Restaurant Projects
 
-In this repositoy I will be getting the documentation of the proyect web playgorund, class base view
+In this repositoy I will be getting the documentation of the proyect web restaurant, class base view
 
 # How to upload this repository
 
@@ -26,6 +26,14 @@ In this repositoy I will be getting the documentation of the proyect web playgor
   - git push -u origin main
 
 # Create Virtual Environment With Conda
+
+[Index](#Index)
+
+- conda create -n py392_apipelis python
+- activate : $ conda activate py392_apipelis
+- deactivate : $ conda deactivate
+
+# Create Virtual Environment With Pipenv
 
 [Index](#Index)
 
