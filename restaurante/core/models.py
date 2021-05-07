@@ -14,11 +14,11 @@ class Categoria(models.Model):
 
 class Plato(models.Model):
     name = models.CharField(max_length=100, verbose_name="Nombre")
-    
+    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
 
     class Meta:
-        verbose_name = "Categoría"
-        verbose_name_plural = "Categorias"
+        verbose_name = "Plato"
+        verbose_name_plural = "Platos"
