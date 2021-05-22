@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 requests = "*"
+django = "==3.2"
+psycopg2-binary = "*"
 
 [dev-packages]
 

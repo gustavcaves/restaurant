@@ -4,6 +4,7 @@ from django.db import models
 
 class Categoria(models.Model):
     name = models.CharField(max_length=100, verbose_name="Nombre")
+    description = models.CharField(max_length=1000, verbose_name="Descripción", default="Add Description")
 
     def __str__(self):
         return self.name
