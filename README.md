@@ -37,9 +37,7 @@ In this repositoy I will be getting the documentation of the proyect web restaur
 
 [Index](#Index)
 
-- conda create -n py392_apipelis python
-- activate : $ conda activate py392_apipelis
-- deactivate : $ conda deactivate
+- pipenv shell for activate the enviroment
 
 # Start a Project in Django
 

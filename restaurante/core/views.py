@@ -8,10 +8,11 @@ from .models import Categoria, Plato
 # def home(request):
 #     return render(request, "core/home.html")
 
-def sample(request):
-    return render(request, "core/sample.html")
+# def sample(request):
+#     return render(request, "core/sample.html")
 
 class HomePageView(TemplateView):
+
     template_name = "core/home.html"
 
 class CategoriasView(ListView):
@@ -20,4 +21,4 @@ class CategoriasView(ListView):
 
 class PlatosView(ListView):
 
-    model = Plato, Categoria
+    model = Plato

@@ -6,27 +6,22 @@
 
     <div style="padding-top:50px; text-align:center;">
 
-        <h1>Las categorias son:</h1>
+        <h1>Los platos son:</h1>
         <br>
 
-        {% for categoria in object_list %}
+        {% for plato in object_list %}
 
             <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{ categoria.name }}</h5>
+                <h5 class="mb-1">{{ plato.categoria }}</h5>
                 <small>PIDELO AHORA</small>
-                </div>
-                <p class="mb-1">{{ categoria.description }}</p>
-                <small>Los mejores descuentos.</small>
-
-                {% for categoria in object_list %}
-                
-                <p>{{ categoria.name }}</p>
-
+                </div>            
+                {% for i in object_list %}
+                    <p class="mb-1">{{ i.name }}</p>
                 {% endfor %}
-
-
+                
+                <small>Los mejores descuentos.</small>
 
             </a>
             <br>
@@ -38,5 +33,3 @@
 </div>
 
 {% endblock content %}
-
-

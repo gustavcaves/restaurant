@@ -6,7 +6,6 @@ from .models import Categoria, Plato
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name',)
 
-
 admin.site.register(Categoria, CategoryAdmin)
 
 class PlatoAdmin(admin.ModelAdmin):
