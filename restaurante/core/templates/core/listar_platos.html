@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+
+
+{% block content %}
+
+{%for categoria in categorias%}
+
+    <h1> {{categoria.name}}</h1>
+
+        {%for plato in platos %}
+
+            {% if plato.categoria_id == categoria.id %}
+
+            <p>{{plato.name}}</p>
+
+            {% endif %}
+
+        {% endfor %}
+
+{%endfor%}
+
+{% endblock content %}

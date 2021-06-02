@@ -6,7 +6,7 @@
 
     <div style="padding-top:50px; text-align:center;">
 
-        <h1>Las categorias son:</h1>
+        <h1>{{title}}</h1>
         <br>
 
         {% for categoria in object_list %}
@@ -20,13 +20,15 @@
                 <p class="mb-1">{{ categoria.description }}</p>
                 <small>Los mejores descuentos.</small>
 
-                {% for categoria in object_list %}
+                {% for p in object_list2 %}
                 
-                <p>{{ categoria.name }}</p>
+                    {% if p.categoria_id == categoria.id %}
+                        
+                        <p>{{ p.name }}</p>
+                        
+                    {% endif %}
 
                 {% endfor %}
-
-
 
             </a>
             <br>

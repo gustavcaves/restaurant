@@ -19,6 +19,19 @@ class CategoriasView(ListView):
 
     model = Categoria
 
-class PlatosView(ListView):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = 'Listado de Categorías'
+        context["object_list2"] = Plato.objects.all()
+        return context
+    
 
-    model = Plato
+# class PlatosView(ListView):
+
+#     model = Plato
+
+
+# def listar_platos(request):
+#     platos = Plato.objects.all()
+#     categorias = Categoria.objects.all()
+#     return render(request, "core/listar_platos.html",context={' platos ': platos ,'categorias':categorias})
