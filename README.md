@@ -8,6 +8,8 @@ admin | 1234
 
 # Requirements
 
+pipenv
+or
 pip freeze > requirements.txt
 
 Original Requirements:
